@@ -1,6 +1,6 @@
 VAR health = 4
 VAR full = 1
-VAR inventory = 1
+VAR inventory = 0
 
 
 Ugh..*growl*...I'm so hungry! Fridge, please help me!
@@ -19,8 +19,10 @@ Not exactly what I was looking for but better than nothing!
 
 
 ==Leftovers==
+It's a leftover from 2 weeks ago.
 *smell it
 Eww! *cough* this is disgusting
+#leftovers
 ->LeftoversClicked
 
 ==LeftoversClicked==
@@ -29,19 +31,18 @@ Well, better than dying of hunger!
 ~ full = full + 1
 ~ inventory = inventory + 1
  -> DONE
-    
- == Pastry==
-  -> DONE
   
   ==FlourClicked==
+  It's flour.
  *take it
-   Great for all recipes!
+  Great for all recipes!
 ~ health = health + 2
 ~ full = full + 3
 ~ inventory = inventory + 1
  -> DONE
 
  ==SaltClicked==
+ It's salt.
  *take it
 A classic.
 ~ health = health - 1
@@ -62,6 +63,7 @@ Not my favorite but definetly good for me!
  -> DONE
 
 ==EggClicked==
+It's egg.
  *take it
 Yay! I'm so lucky! Nothing better than a fresh egg!
 ~ health = health + 2
