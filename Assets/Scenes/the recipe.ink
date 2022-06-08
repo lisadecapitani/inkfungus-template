@@ -15,6 +15,7 @@ Not exactly what I was looking for but better than nothing!
 ~ health = health - 1
 ~ full = full + 1
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
 ->DONE
 
 
@@ -30,24 +31,23 @@ Well, better than dying of hunger!
 ~ health = health - 2
 ~ full = full + 1
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
  -> DONE
   
   ==FlourClicked==
-  It's flour.
- *take it
   Great for all recipes!
 ~ health = health + 2
 ~ full = full + 3
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
  -> DONE
 
  ==SaltClicked==
- It's salt.
- *take it
 A classic.
 ~ health = health - 1
 ~ full = full
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
  -> DONE
  
   == Garden==
@@ -55,28 +55,51 @@ A classic.
  
  ==CarrotClicked==
 Not my favorite but definetly good for me!
- *take it
- 
 ~ health = health + 2
 ~ full = full + 3
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
  -> DONE
 
 ==EggClicked==
-It's egg.
- *take it
 Yay! I'm so lucky! Nothing better than a fresh egg!
 ~ health = health + 2
 ~ full = full + 3
 ~ inventory = inventory + 1
+{inventory >= 3} -> Combine
+ -> DONE
+ 
+  ==MushroomClicked==
+Is it edible? Well, whatever.
+~ health = health - 2
+~ full = full + 1
+~ inventory = inventory + 1
+{inventory >= 3} -> Combine
  -> DONE
 
 
--> Combine
 
+==Combine==
+{health > 5} -> GoodEnding
+{full> 9} -> GoodEnding
 
-===Combine==
-*combine
--> DONE
+{health < 1} -> BadEnding
+{full < 4} -> BadEnding
 
+{health < 1} -> BadEnding2
+{full < 4} -> BadEnding2
 
+==GoodEnding==
+#good ending
+It was worth waiting! What a wonderful lunch!
+ -> DONE
+ 
+ ==BadEnding==
+ #bad ending
+Uugh it hurts, I should call the hospital.
+ -> DONE
+ 
+ ==BadEnding2==
+  #bad ending 2
+I mean is not that bad but it's not good either.
+ -> DONE
