@@ -10791,7 +10791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5589ca0e58e25c4cb0dd64d4a7512e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ink: {fileID: 4900000, guid: 6849fdee318184b7599bed73bcd18601, type: 3}
+  ink: {fileID: 4900000, guid: 05d08673c4d2d42f4b3436642fee33b3, type: 3}
   sayDialog: {fileID: 599180208}
   menuDialog: {fileID: 905611305}
   defaultCharacterColor: {r: 0, g: 0, b: 0, a: 1}
