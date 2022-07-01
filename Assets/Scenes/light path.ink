@@ -2,13 +2,18 @@ VAR firefly = 0
 VAR map = 1
 VAR emotional_growth = 0
 
-==Dice_room==
-eujrhweu
+Mom!
+Mom!!
+MOOOMMMM!!!
+Mom, pretty please...
+...It's so dark in here.
 -> DONE
 
-==Jack_room==
-shdshdsu
+==Dice_room==
 ~ map = 2
+Where am I?
+Is this a dream?
+eujrhweu
 -> DONE
 
 ==CandyStore_room==
