@@ -1,6 +1,4 @@
 VAR firefly = 0
-VAR map = 1
-VAR emotional_growth = 0
 
 Mom!
 Mom!!
@@ -10,7 +8,6 @@ Mom, pretty please...
 -> DONE
 
 ==Dice_room==
-~ map = 2
 Where am I?
 Is this a dream?
 eujrhweu
@@ -18,7 +15,6 @@ eujrhweu
 
 ==CandyStore_room==
 jknkjnkj
-~ map = 3
 -> DONE
 
 ==Firefly_clicked==
@@ -27,4 +23,16 @@ jknkjnkj
 
 ==Firefly_dragged==
 ~ firefly = firefly + 1
+What do you want to do when you grow up?
+ +I don't know...
+~ firefly = firefly + 2
+#stop
+-> DONE
++I want to be a pokemon trainer!
+~ firefly = firefly + 1
+#stop
+-> DONE
++I want to be an engineer.
+~ firefly = firefly + 3
+#stop
 -> DONE
