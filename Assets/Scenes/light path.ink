@@ -14,6 +14,7 @@ eujrhweu
 -> DONE
 
 ==CandyStore_room==
+#candy
 jknkjnkj
 -> DONE
 
@@ -23,13 +24,18 @@ jknkjnkj
 
 ==Firefly_dragged==
 What do you want to do when you grow up?
- +I don't know...
+
+ +I don't know
+ I don't know...
 ~ firefly = firefly + 2
-#stop
 -> CandyStore_room
-+I want to be a pokemon trainer!
+
++Pokémon trainer
+I want to be a pokémon trainer!
 ~ firefly = firefly + 1
--> DONE
-+I want to be an engineer.
+-> CandyStore_room
+
++Engineer
+I want to be an engineer.
 ~ firefly = firefly + 3
--> DONE
+-> CandyStore_room
