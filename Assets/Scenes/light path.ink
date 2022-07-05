@@ -1,4 +1,5 @@
 VAR firefly = 0
+VAR N = 0
 
 Mom!
 Mom!!
@@ -17,6 +18,14 @@ eujrhweu
 #candy
 jknkjnkj
 -> DONE
+
+==Handle_clicked==
+~ N = N + 1
+{
+  - N >= 3:
+    -> Firefly_clicked
+}
+ -> DONE
 
 ==Firefly_clicked==
 ~ firefly = firefly + 1
