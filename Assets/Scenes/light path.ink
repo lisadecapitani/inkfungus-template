@@ -84,3 +84,28 @@ I want to be a pokémon trainer!
 I want to be an engineer.
 ~ emotional_growth = emotional_growth + 2
 -> CandyStore_room
+
+==BadEnding==
+Good Morning Mr.Brown.
+Who are you?
+I'm Sapphia, I'm your nurse for the day.
+Sapphia? I don't know you!
+I just started working here Sir.
+Working? What's going on? Where am I?
+You're in the nursing hom-
+Mom, MOM!
+Sir calm down.
+MOOOOOOM!!!
+Dr.Anderson, I think we have a problem here.
+#blackscreen
+NOOOOOOOOOOO!!!
+The End.
+-> END
+
+
+
+
+
+
+
+
