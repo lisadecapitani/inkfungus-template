@@ -23,22 +23,44 @@ jknkjnkj
 ~ N = N + 1
 {
   - N <= 1 and N >=0:
-    -> DONE
+    -> Candy1
     - N <= 2 and N >=1:
     -> Candy2
     - N <= 3 and N >=2:
-    ->Firefly_clicked
+    ->Firefly_message
 }
+ -> DONE
+
+==Candy1==
+Free Candy!!!
++ eat
+#fadecandy1
+Umm, Yummy!
+ -> DONE
++ don't eat
+#fadecandy1
+Too bad, I'm already full.
  -> DONE
  
 ==Candy2==
 My mom always says it's better not to eat too many sweets...
 + eat
+#fadecandy2
 But they taste so good!
  -> DONE
 + don't eat
+#fadecandy2
 I don't want to make my mom angry.
 ~ emotional_growth = emotional_growth + 2
+ -> DONE
+ 
+ ==Firefly_message==
+#firefly
+~ firefly = firefly + 1
+-> Office
+
+==Office==
+here we are.
  -> DONE
  
 ==Firefly_clicked==

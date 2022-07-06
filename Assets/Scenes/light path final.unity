@@ -159,27 +159,27 @@ GameObject:
   - component: {fileID: 5782914}
   - component: {fileID: 5782917}
   - component: {fileID: 5782922}
-  - component: {fileID: 5782927}
-  - component: {fileID: 5782925}
-  - component: {fileID: 5782921}
   - component: {fileID: 5782928}
   - component: {fileID: 5782923}
-  - component: {fileID: 5782931}
-  - component: {fileID: 5782930}
-  - component: {fileID: 5782929}
   - component: {fileID: 5782932}
   - component: {fileID: 5782926}
   - component: {fileID: 5782933}
-  - component: {fileID: 5782934}
-  - component: {fileID: 5782936}
   - component: {fileID: 5782935}
   - component: {fileID: 5782918}
   - component: {fileID: 5782919}
   - component: {fileID: 5782939}
-  - component: {fileID: 5782920}
   - component: {fileID: 5782938}
-  - component: {fileID: 5782937}
   - component: {fileID: 5782924}
+  - component: {fileID: 5782920}
+  - component: {fileID: 5782934}
+  - component: {fileID: 5782925}
+  - component: {fileID: 5782927}
+  - component: {fileID: 5782921}
+  - component: {fileID: 5782936}
+  - component: {fileID: 5782937}
+  - component: {fileID: 5782931}
+  - component: {fileID: 5782930}
+  - component: {fileID: 5782929}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -200,11 +200,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 71.66118, y: 42.759743}
+  scrollPos: {x: -80.91089, y: 50.68032}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 280
-  zoom: 1
+  zoom: 0.9524999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -212,7 +212,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 5782909}
+  - {fileID: 5782926}
   selectedCommands: []
   variables:
   - {fileID: 5782908}
@@ -257,7 +257,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 39.298157
     y: 161.03098
-    width: 110
+    width: 112.99213
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 239.50058
     y: -13.766579
-    width: 131
+    width: 135.03937
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -457,7 +457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 238.04428
     y: 85.28985
-    width: 136
+    width: 140.28873
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 427.35706
     y: 85.686165
-    width: 120
+    width: 123.49082
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -740,9 +740,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 590.12366
-    y: 86.293755
-    width: 140
+    x: 591.12366
+    y: 89.293755
+    width: 144.48819
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -753,16 +753,15 @@ MonoBehaviour:
   commandList:
   - {fileID: 5782932}
   - {fileID: 5782914}
-  - {fileID: 5782937}
+  - {fileID: 5782924}
   - {fileID: 5782928}
   - {fileID: 5782939}
-  - {fileID: 5782924}
+  - {fileID: 5782934}
   - {fileID: 5782923}
   - {fileID: 5782938}
   - {fileID: 5782919}
   - {fileID: 5782918}
   - {fileID: 5782922}
-  - {fileID: 5782920}
   suppressAllAutoSelections: 0
 --- !u!114 &5782916
 MonoBehaviour:
@@ -1065,11 +1064,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5782890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 63
-  indentLevel: 0
+  parentBlock: {fileID: 5782926}
+  suppressBlockAutoSelect: 0
+  message: ink fadecandy2
 --- !u!114 &5782921
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1079,13 +1079,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5782890}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 5782927}
-  suppressBlockAutoSelect: 0
-  clickableObject: {fileID: 1166814035}
-  waitFrames: 0
+  itemId: 70
+  indentLevel: 0
+  targetClickable2D: {fileID: 1166814035}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
 --- !u!114 &5782922
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1147,511 +1149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 66
-  indentLevel: 0
-  anyOrAllConditions: 0
-  conditions:
-  - compareOperator: 0
-    anyVar:
-      variable: {fileID: 5782917}
-      data:
-        animatorData:
-          animatorRef: {fileID: 0}
-          animatorVal: {fileID: 0}
-        audioSourceData:
-          audioSourceRef: {fileID: 0}
-          audioSourceVal: {fileID: 0}
-        booleanData:
-          booleanRef: {fileID: 0}
-          booleanVal: 0
-        collectionData:
-          collectionRef: {fileID: 0}
-          collectionVal: {fileID: 0}
-        collider2DData:
-          collider2DRef: {fileID: 0}
-          collider2DVal: {fileID: 0}
-        colliderData:
-          colliderRef: {fileID: 0}
-          colliderVal: {fileID: 0}
-        colorData:
-          colorRef: {fileID: 0}
-          colorVal: {r: 0, g: 0, b: 0, a: 0}
-        floatData:
-          floatRef: {fileID: 0}
-          floatVal: 0
-        gameObjectData:
-          gameObjectRef: {fileID: 0}
-          gameObjectVal: {fileID: 0}
-        integerData:
-          integerRef: {fileID: 0}
-          integerVal: 2
-        materialData:
-          materialRef: {fileID: 0}
-          materialVal: {fileID: 0}
-        matrix4x4Data:
-          matrix4x4Ref: {fileID: 0}
-          matrix4x4Val:
-            e00: 0
-            e01: 0
-            e02: 0
-            e03: 0
-            e10: 0
-            e11: 0
-            e12: 0
-            e13: 0
-            e20: 0
-            e21: 0
-            e22: 0
-            e23: 0
-            e30: 0
-            e31: 0
-            e32: 0
-            e33: 0
-        objectData:
-          objectRef: {fileID: 0}
-          objectVal: {fileID: 0}
-        quaternionData:
-          quaternionRef: {fileID: 0}
-          quaternionVal: {x: 0, y: 0, z: 0, w: 0}
-        rigidbody2DData:
-          rigidbody2DRef: {fileID: 0}
-          rigidbody2DVal: {fileID: 0}
-        rigidbodyData:
-          rigidbodyRef: {fileID: 0}
-          rigidbodyVal: {fileID: 0}
-        spriteData:
-          spriteRef: {fileID: 0}
-          spriteVal: {fileID: 0}
-        stringData:
-          stringRef: {fileID: 0}
-          stringVal: 
-        textureData:
-          textureRef: {fileID: 0}
-          textureVal: {fileID: 0}
-        transformData:
-          transformRef: {fileID: 0}
-          transformVal: {fileID: 0}
-        vector2Data:
-          vector2Ref: {fileID: 0}
-          vector2Val: {x: 0, y: 0}
-        vector3Data:
-          vector3Ref: {fileID: 0}
-          vector3Val: {x: 0, y: 0, z: 0}
-        vector4Data:
-          vector4Ref: {fileID: 0}
-          vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  compareOperator: 0
-  anyVar:
-    variable: {fileID: 0}
-    data:
-      animatorData:
-        animatorRef: {fileID: 0}
-        animatorVal: {fileID: 0}
-      audioSourceData:
-        audioSourceRef: {fileID: 0}
-        audioSourceVal: {fileID: 0}
-      booleanData:
-        booleanRef: {fileID: 0}
-        booleanVal: 0
-      collectionData:
-        collectionRef: {fileID: 0}
-        collectionVal: {fileID: 0}
-      collider2DData:
-        collider2DRef: {fileID: 0}
-        collider2DVal: {fileID: 0}
-      colliderData:
-        colliderRef: {fileID: 0}
-        colliderVal: {fileID: 0}
-      colorData:
-        colorRef: {fileID: 0}
-        colorVal: {r: 0, g: 0, b: 0, a: 0}
-      floatData:
-        floatRef: {fileID: 0}
-        floatVal: 0
-      gameObjectData:
-        gameObjectRef: {fileID: 0}
-        gameObjectVal: {fileID: 0}
-      integerData:
-        integerRef: {fileID: 0}
-        integerVal: 0
-      materialData:
-        materialRef: {fileID: 0}
-        materialVal: {fileID: 0}
-      matrix4x4Data:
-        matrix4x4Ref: {fileID: 0}
-        matrix4x4Val:
-          e00: 0
-          e01: 0
-          e02: 0
-          e03: 0
-          e10: 0
-          e11: 0
-          e12: 0
-          e13: 0
-          e20: 0
-          e21: 0
-          e22: 0
-          e23: 0
-          e30: 0
-          e31: 0
-          e32: 0
-          e33: 0
-      objectData:
-        objectRef: {fileID: 0}
-        objectVal: {fileID: 0}
-      quaternionData:
-        quaternionRef: {fileID: 0}
-        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
-      rigidbody2DData:
-        rigidbody2DRef: {fileID: 0}
-        rigidbody2DVal: {fileID: 0}
-      rigidbodyData:
-        rigidbodyRef: {fileID: 0}
-        rigidbodyVal: {fileID: 0}
-      spriteData:
-        spriteRef: {fileID: 0}
-        spriteVal: {fileID: 0}
-      stringData:
-        stringRef: {fileID: 0}
-        stringVal: 
-      textureData:
-        textureRef: {fileID: 0}
-        textureVal: {fileID: 0}
-      transformData:
-        transformRef: {fileID: 0}
-        transformVal: {fileID: 0}
-      vector2Data:
-        vector2Ref: {fileID: 0}
-        vector2Val: {x: 0, y: 0}
-      vector3Data:
-        vector3Ref: {fileID: 0}
-        vector3Val: {x: 0, y: 0, z: 0}
-      vector4Data:
-        vector4Ref: {fileID: 0}
-        vector4Val: {x: 0, y: 0, z: 0, w: 0}
-  variable: {fileID: 0}
-  booleanData:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  integerData:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  floatData:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  stringData:
-    stringRef: {fileID: 0}
-    stringVal: 
-  animatorData:
-    animatorRef: {fileID: 0}
-    animatorVal: {fileID: 0}
-  audioSourceData:
-    audioSourceRef: {fileID: 0}
-    audioSourceVal: {fileID: 0}
-  colorData:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0, g: 0, b: 0, a: 0}
-  gameObjectData:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 0}
-  materialData:
-    materialRef: {fileID: 0}
-    materialVal: {fileID: 0}
-  objectData:
-    objectRef: {fileID: 0}
-    objectVal: {fileID: 0}
-  rigidbody2DData:
-    rigidbody2DRef: {fileID: 0}
-    rigidbody2DVal: {fileID: 0}
-  spriteData:
-    spriteRef: {fileID: 0}
-    spriteVal: {fileID: 0}
-  textureData:
-    textureRef: {fileID: 0}
-    textureVal: {fileID: 0}
-  transformData:
-    transformRef: {fileID: 0}
-    transformVal: {fileID: 0}
-  vector2Data:
-    vector2Ref: {fileID: 0}
-    vector2Val: {x: 0, y: 0}
-  vector3Data:
-    vector3Ref: {fileID: 0}
-    vector3Val: {x: 0, y: 0, z: 0}
---- !u!114 &5782925
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 38
-  indentLevel: 0
-  spriteRenderer: {fileID: 1166814037}
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 0.2
-  _targetColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
-  waitUntilFinished: 0
-  durationOLD: 0
-  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5782926
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 782.82086
-    y: 86.36523
-    width: 143
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 49
-  blockName: Candy Clicked 2
-  description: 
-  eventHandler: {fileID: 5782934}
-  commandList:
-  - {fileID: 5782933}
-  - {fileID: 5782935}
-  suppressAllAutoSelections: 0
---- !u!114 &5782927
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 787.82086
-    y: 25.365227
-    width: 133
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 39
-  blockName: Candy Clicked
-  description: 
-  eventHandler: {fileID: 5782921}
-  commandList:
-  - {fileID: 5782925}
-  - {fileID: 5782936}
-  suppressAllAutoSelections: 0
---- !u!114 &5782928
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 41
-  indentLevel: 1
-  spriteRenderer: {fileID: 1166814037}
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 0.2
-  _targetColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 1}
-  waitUntilFinished: 0
-  durationOLD: 0
-  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5782929
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 45
-  indentLevel: 0
-  spriteRenderer: {fileID: 1975124089}
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 0.5
-  _targetColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 1, g: 1, b: 1, a: 0}
-  waitUntilFinished: 0
-  durationOLD: 0
-  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5782930
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 5782931}
-  suppressBlockAutoSelect: 0
-  clickableObject: {fileID: 1975124087}
-  waitFrames: 0
---- !u!114 &5782931
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 781.3388
-    y: 143.24026
-    width: 204
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 44
-  blockName: Firefly Clicked Candy Store
-  description: 
-  eventHandler: {fileID: 5782930}
-  commandList:
-  - {fileID: 5782929}
-  suppressAllAutoSelections: 0
---- !u!114 &5782932
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6863f37f0bd753a47a685373932c4615, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 46
-  indentLevel: 0
-  knotOrStitch: Handle_clicked
---- !u!114 &5782933
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 48
-  indentLevel: 0
-  spriteRenderer: {fileID: 2109143633}
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 0.2
-  _targetColor:
-    colorRef: {fileID: 0}
-    colorVal: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
-  waitUntilFinished: 0
-  durationOLD: 0
-  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &5782934
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49012bdc794e429686c1eff7d9ced90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 5782926}
-  suppressBlockAutoSelect: 0
-  clickableObject: {fileID: 2109143631}
-  waitFrames: 0
---- !u!114 &5782935
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 51
-  indentLevel: 0
-  targetClickable2D: {fileID: 2109143631}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &5782936
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 50
-  indentLevel: 0
-  targetClickable2D: {fileID: 1166814035}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
---- !u!114 &5782937
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5782890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 65
   indentLevel: 0
   anyOrAllConditions: 0
   conditions:
@@ -1882,6 +1379,510 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &5782925
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 782.82086
+    y: 25.365227
+    width: 212.72968
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 71
+  blockName: Candy 1 Message Received
+  description: 
+  eventHandler: {fileID: 5782936}
+  commandList:
+  - {fileID: 5782927}
+  - {fileID: 5782921}
+  suppressAllAutoSelections: 0
+--- !u!114 &5782926
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 782.82086
+    y: 83.36523
+    width: 213.77954
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 49
+  blockName: Candy 2 Message Received
+  description: 
+  eventHandler: {fileID: 5782920}
+  commandList:
+  - {fileID: 5782933}
+  - {fileID: 5782935}
+  suppressAllAutoSelections: 0
+--- !u!114 &5782927
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 69
+  indentLevel: 0
+  spriteRenderer: {fileID: 1166814037}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5782928
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 1
+  spriteRenderer: {fileID: 1166814037}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5782929
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 5782937}
+  suppressBlockAutoSelect: 0
+  message: ink firefly
+--- !u!114 &5782930
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  targetClickable2D: {fileID: 1975124087}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &5782931
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 73
+  indentLevel: 0
+  spriteRenderer: {fileID: 1975124089}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5782932
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6863f37f0bd753a47a685373932c4615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  knotOrStitch: Handle_clicked
+--- !u!114 &5782933
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accc065c3e9a6457496f075b1bd49adc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  spriteRenderer: {fileID: 2109143633}
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 0.2
+  _targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0.20000002, g: 0.20000002, b: 0.20000002, a: 0}
+  waitUntilFinished: 0
+  durationOLD: 0
+  targetColorOLD: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &5782934
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  anyOrAllConditions: 0
+  conditions:
+  - compareOperator: 0
+    anyVar:
+      variable: {fileID: 5782917}
+      data:
+        animatorData:
+          animatorRef: {fileID: 0}
+          animatorVal: {fileID: 0}
+        audioSourceData:
+          audioSourceRef: {fileID: 0}
+          audioSourceVal: {fileID: 0}
+        booleanData:
+          booleanRef: {fileID: 0}
+          booleanVal: 0
+        collectionData:
+          collectionRef: {fileID: 0}
+          collectionVal: {fileID: 0}
+        collider2DData:
+          collider2DRef: {fileID: 0}
+          collider2DVal: {fileID: 0}
+        colliderData:
+          colliderRef: {fileID: 0}
+          colliderVal: {fileID: 0}
+        colorData:
+          colorRef: {fileID: 0}
+          colorVal: {r: 0, g: 0, b: 0, a: 0}
+        floatData:
+          floatRef: {fileID: 0}
+          floatVal: 0
+        gameObjectData:
+          gameObjectRef: {fileID: 0}
+          gameObjectVal: {fileID: 0}
+        integerData:
+          integerRef: {fileID: 0}
+          integerVal: 2
+        materialData:
+          materialRef: {fileID: 0}
+          materialVal: {fileID: 0}
+        matrix4x4Data:
+          matrix4x4Ref: {fileID: 0}
+          matrix4x4Val:
+            e00: 0
+            e01: 0
+            e02: 0
+            e03: 0
+            e10: 0
+            e11: 0
+            e12: 0
+            e13: 0
+            e20: 0
+            e21: 0
+            e22: 0
+            e23: 0
+            e30: 0
+            e31: 0
+            e32: 0
+            e33: 0
+        objectData:
+          objectRef: {fileID: 0}
+          objectVal: {fileID: 0}
+        quaternionData:
+          quaternionRef: {fileID: 0}
+          quaternionVal: {x: 0, y: 0, z: 0, w: 0}
+        rigidbody2DData:
+          rigidbody2DRef: {fileID: 0}
+          rigidbody2DVal: {fileID: 0}
+        rigidbodyData:
+          rigidbodyRef: {fileID: 0}
+          rigidbodyVal: {fileID: 0}
+        spriteData:
+          spriteRef: {fileID: 0}
+          spriteVal: {fileID: 0}
+        stringData:
+          stringRef: {fileID: 0}
+          stringVal: 
+        textureData:
+          textureRef: {fileID: 0}
+          textureVal: {fileID: 0}
+        transformData:
+          transformRef: {fileID: 0}
+          transformVal: {fileID: 0}
+        vector2Data:
+          vector2Ref: {fileID: 0}
+          vector2Val: {x: 0, y: 0}
+        vector3Data:
+          vector3Ref: {fileID: 0}
+          vector3Val: {x: 0, y: 0, z: 0}
+        vector4Data:
+          vector4Ref: {fileID: 0}
+          vector4Val: {x: 0, y: 0, z: 0, w: 0}
+  compareOperator: 0
+  anyVar:
+    variable: {fileID: 0}
+    data:
+      animatorData:
+        animatorRef: {fileID: 0}
+        animatorVal: {fileID: 0}
+      audioSourceData:
+        audioSourceRef: {fileID: 0}
+        audioSourceVal: {fileID: 0}
+      booleanData:
+        booleanRef: {fileID: 0}
+        booleanVal: 0
+      collectionData:
+        collectionRef: {fileID: 0}
+        collectionVal: {fileID: 0}
+      collider2DData:
+        collider2DRef: {fileID: 0}
+        collider2DVal: {fileID: 0}
+      colliderData:
+        colliderRef: {fileID: 0}
+        colliderVal: {fileID: 0}
+      colorData:
+        colorRef: {fileID: 0}
+        colorVal: {r: 0, g: 0, b: 0, a: 0}
+      floatData:
+        floatRef: {fileID: 0}
+        floatVal: 0
+      gameObjectData:
+        gameObjectRef: {fileID: 0}
+        gameObjectVal: {fileID: 0}
+      integerData:
+        integerRef: {fileID: 0}
+        integerVal: 0
+      materialData:
+        materialRef: {fileID: 0}
+        materialVal: {fileID: 0}
+      matrix4x4Data:
+        matrix4x4Ref: {fileID: 0}
+        matrix4x4Val:
+          e00: 0
+          e01: 0
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 0
+          e12: 0
+          e13: 0
+          e20: 0
+          e21: 0
+          e22: 0
+          e23: 0
+          e30: 0
+          e31: 0
+          e32: 0
+          e33: 0
+      objectData:
+        objectRef: {fileID: 0}
+        objectVal: {fileID: 0}
+      quaternionData:
+        quaternionRef: {fileID: 0}
+        quaternionVal: {x: 0, y: 0, z: 0, w: 0}
+      rigidbody2DData:
+        rigidbody2DRef: {fileID: 0}
+        rigidbody2DVal: {fileID: 0}
+      rigidbodyData:
+        rigidbodyRef: {fileID: 0}
+        rigidbodyVal: {fileID: 0}
+      spriteData:
+        spriteRef: {fileID: 0}
+        spriteVal: {fileID: 0}
+      stringData:
+        stringRef: {fileID: 0}
+        stringVal: 
+      textureData:
+        textureRef: {fileID: 0}
+        textureVal: {fileID: 0}
+      transformData:
+        transformRef: {fileID: 0}
+        transformVal: {fileID: 0}
+      vector2Data:
+        vector2Ref: {fileID: 0}
+        vector2Val: {x: 0, y: 0}
+      vector3Data:
+        vector3Ref: {fileID: 0}
+        vector3Val: {x: 0, y: 0, z: 0}
+      vector4Data:
+        vector4Ref: {fileID: 0}
+        vector4Val: {x: 0, y: 0, z: 0, w: 0}
+  variable: {fileID: 0}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+  animatorData:
+    animatorRef: {fileID: 0}
+    animatorVal: {fileID: 0}
+  audioSourceData:
+    audioSourceRef: {fileID: 0}
+    audioSourceVal: {fileID: 0}
+  colorData:
+    colorRef: {fileID: 0}
+    colorVal: {r: 0, g: 0, b: 0, a: 0}
+  gameObjectData:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
+  materialData:
+    materialRef: {fileID: 0}
+    materialVal: {fileID: 0}
+  objectData:
+    objectRef: {fileID: 0}
+    objectVal: {fileID: 0}
+  rigidbody2DData:
+    rigidbody2DRef: {fileID: 0}
+    rigidbody2DVal: {fileID: 0}
+  spriteData:
+    spriteRef: {fileID: 0}
+    spriteVal: {fileID: 0}
+  textureData:
+    textureRef: {fileID: 0}
+    textureVal: {fileID: 0}
+  transformData:
+    transformRef: {fileID: 0}
+    transformVal: {fileID: 0}
+  vector2Data:
+    vector2Ref: {fileID: 0}
+    vector2Val: {x: 0, y: 0}
+  vector3Data:
+    vector3Ref: {fileID: 0}
+    vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &5782935
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a598660d01b2343bb92adebcbb629ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  targetClickable2D: {fileID: 2109143631}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &5782936
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 5782925}
+  suppressBlockAutoSelect: 0
+  message: ink fadecandy1
+--- !u!114 &5782937
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 782.82086
+    y: 140.36523
+    width: 201.1811
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 75
+  blockName: Firefly Message Received
+  description: 
+  eventHandler: {fileID: 5782929}
+  commandList:
+  - {fileID: 5782931}
+  - {fileID: 5782930}
+  suppressAllAutoSelections: 0
 --- !u!114 &5782938
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4744,7 +4745,7 @@ GameObject:
   - component: {fileID: 831019936}
   - component: {fileID: 831019937}
   m_Layer: 0
-  m_Name: candy 1
+  m_Name: Candies in Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4803,7 +4804,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: da0551beb86df422890dc2a80e99e463, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
