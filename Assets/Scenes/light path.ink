@@ -16,68 +16,80 @@ Is this a dream?
 
 ==CandyStore_room==
 #candy
-jknkjnkj
+Woooow! It's so...
+beautiful!!
+If this is a dream, I never want to wake up!
 -> DONE
 
 ==Handle_clicked==
 ~ N = N + 1
 {
-  - N <= 1 and N >=0:
-    -> Candy1
-    - N <= 2 and N >=1:
-    -> Candy2
-    - N <= 3 and N >=2:
-    ->Firefly_message
+ - N <= 1 and N >=0:
+ -> Candy1
+ - N <= 2 and N >=1:
+ -> Candy2
+ - N <= 3 and N >=2:
+ ->Firefly_message
 }
- -> DONE
+-> DONE
 
 ==Candy1==
 Free Candy!!!
 + eat
 #fadecandy1
 Umm, Yummy!
- -> DONE
+-> DONE
 + don't eat
 #fadecandy1
 Too bad, I'm already full.
- -> DONE
- 
+-> DONE
+
 ==Candy2==
 My mom always says it's better not to eat too many sweets...
 + eat
 #fadecandy2
 But they taste so good!
- -> DONE
+{
+ - emotional_growth <= 1:
+ #badending
+-> BadEnding
+}
+-> DONE
 + don't eat
 #fadecandy2
 I don't want to make my mom angry.
 ~ emotional_growth = emotional_growth + 2
- -> DONE
- 
- ==Firefly_message==
+-> DONE
+
+==Firefly_message==
 #firefly
 ~ firefly = firefly + 1
+#rapresention
 -> Office
 
 ==Office==
-here we are.
- -> DONE
- 
+What is this?
+An office? Wait!
+Isn't that...mine?
+-> DONE
+
 ==Firefly_clicked==
 ~ firefly = firefly + 1
+#rapresention
 -> DONE
 
 ==Firefly_dragged==
 ~ firefly = firefly + 1
+#rapresention
 What do you want to do when you grow up?
 
- +I don't know
- I don't know...
++I don't know
+I don't know...
 ~ emotional_growth = emotional_growth + 1
 -> CandyStore_room
 
 +Pokémon trainer
-I want to be a pokémon trainer!
+I want to be a Pokémon trainer!
 -> CandyStore_room
 
 +Engineer
@@ -86,23 +98,50 @@ I want to be an engineer.
 -> CandyStore_room
 
 ==BadEnding==
-Good Morning Mr.Brown.
-Who are you?
-I'm Sapphia, I'm your nurse for the day.
-Sapphia? I don't know you!
+Good morning Mr.Brown.
+What's going on! Who are you?
+I'm Sophia, I'm your nurse for the day.
+Sophia? I don't know you!
 I just started working here Sir.
 Working? What's going on? Where am I?
 You're in the nursing hom-
 Mom, MOM!
-Sir calm down.
+Sir, calm down.
 MOOOOOOM!!!
 Dr.Anderson, I think we have a problem here.
 #blackscreen
 NOOOOOOOOOOO!!!
 The End.
--> END
+-> DONE
 
-
+==GoodEnding==
+Good morning Mr.Brown.
+Good morning.
+Excuse me, do I know you?
+Oh no, sorry my bad. I'm Sophia, I'm your nurse for the day.
+Nurse? Did I get hurt?
+Oh no Sir, it's a routine check.
+I don't understand, why am I at the hospital?
+Oh no Sir, this is not a hospital. It's a nursing home.
+NURSING HOME?
+But I'm just a kid! It can be!
+Sir, calm down.
+No, no, no! There must be a mistake here!
+Let's check together then.
+You are Mr.Jack Brown, correct?
+Yes, that is correct.
+Born on the 27th of August of 2001?
+Yes...
+Everything it's on point then.
+But...
+Alright, give me a moment.
+Here we go.
+#gift
+It's a lucky charm. It will guide you through the dark times...I hope you like it.
+I...love it.
+Thank you, Sophia.
+The End.
+-> DONE
 
 
 
