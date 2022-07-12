@@ -98,47 +98,47 @@ I want to be an engineer.
 -> CandyStore_room
 
 ==BadEnding==
-???: Good morning Mr.Brown.
+Sophia "Good morning Mr.Brown.
 What's going on! Who are you?
-Sophia: I'm Sophia, I'm your nurse for the day.
+Sophia "I'm Sophia, I'm your nurse for the day.
 Sophia? I don't know you!
-Sophia: I just started working here Sir.
+Sophia "I just started working here Sir.
 Working? What's going on? Where am I?
-Sophia: You're in the nursing hom-
+Sophia "You're in the nursing hom-
 Mom, MOM!
-Sophia: Sir, calm down.
+Sophia "Sir, calm down.
 MOOOOOOM!!!
-Sophia: Dr.Anderson, I think we have a problem here.
+Sophia "Dr.Anderson, I think we have a problem here.
 #blackscreen
 NOOOOOOOOOOO!!!
 The End.
 -> DONE
 
 ==GoodEnding==
-???: Good morning Mr.Brown.
+Sophia "Good morning Mr.Brown.
 Good morning.
 Excuse me, do I know you?
-???: Oh no, sorry my bad. I'm Sophia, I'm your nurse for the day.
+Sophia "Oh no, sorry my bad. I'm Sophia, I'm your nurse for the day.
 Nurse? Did I get hurt?
-Sophia: Oh no Sir, it's a routine check.
+Sophia "Oh no Sir, it's a routine check.
 I don't understand, why am I at the hospital?
-Sophia: Oh no Sir, this is not a hospital. It's a nursing home.
+Sophia "Oh no Sir, this is not a hospital. It's a nursing home.
 NURSING HOME?
 But I'm just a kid! It can't be!
-Sophia: Sir, calm down.
+Sophia "Sir, calm down.
 No, no, no! There must be a mistake here!
-Sophia: Let's check together then.
+Sophia "Let's check together then.
 Okay.
-Sophia: You are Mr.Jack Brown, correct?
+Sophia "You are Mr.Jack Brown, correct?
 Yes, that is correct.
-Sophia: Born on the 27th of August of 2001?
+Sophia "Born on the 27th of August of 2001?
 Yes...
-Sophia: Everything it's on point then.
+Sophia "Everything it's on point then.
 But...
-Sophia: Alright, give me a moment.
-Sophia: Here we go.
+Sophia "Alright, give me a moment.
+Sophia "Here we go.
 #gift
-Sophia: It's a lucky charm. It will guide you through the dark times...I hope you like it.
+Sophia "It's a lucky charm. It will guide you through the dark times...I hope you like it.
 I...love it.
 Thank you, Sophia.
 The End.
