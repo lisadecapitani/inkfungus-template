@@ -118,16 +118,17 @@ The End.
 ???: Good morning Mr.Brown.
 Good morning.
 Excuse me, do I know you?
-???:Oh no, sorry my bad. I'm Sophia, I'm your nurse for the day.
+???: Oh no, sorry my bad. I'm Sophia, I'm your nurse for the day.
 Nurse? Did I get hurt?
 Sophia: Oh no Sir, it's a routine check.
 I don't understand, why am I at the hospital?
 Sophia: Oh no Sir, this is not a hospital. It's a nursing home.
 NURSING HOME?
-But I'm just a kid! It can be!
+But I'm just a kid! It can't be!
 Sophia: Sir, calm down.
 No, no, no! There must be a mistake here!
 Sophia: Let's check together then.
+Okay.
 Sophia: You are Mr.Jack Brown, correct?
 Yes, that is correct.
 Sophia: Born on the 27th of August of 2001?
